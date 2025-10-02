@@ -1,0 +1,7 @@
+C:\Users\solyomhj\source\repos\ciklusok SHJ\ciklusok SHJ\bin\Debug\ciklusok SHJ.exe.config
+C:\Users\solyomhj\source\repos\ciklusok SHJ\ciklusok SHJ\bin\Debug\ciklusok SHJ.exe
+C:\Users\solyomhj\source\repos\ciklusok SHJ\ciklusok SHJ\bin\Debug\ciklusok SHJ.pdb
+C:\Users\solyomhj\source\repos\ciklusok SHJ\ciklusok SHJ\obj\Debug\ciklusok SHJ.csproj.AssemblyReference.cache
+C:\Users\solyomhj\source\repos\ciklusok SHJ\ciklusok SHJ\obj\Debug\ciklusok SHJ.csproj.CoreCompileInputs.cache
+C:\Users\solyomhj\source\repos\ciklusok SHJ\ciklusok SHJ\obj\Debug\ciklusok SHJ.exe
+C:\Users\solyomhj\source\repos\ciklusok SHJ\ciklusok SHJ\obj\Debug\ciklusok SHJ.pdb
