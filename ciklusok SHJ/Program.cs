@@ -22,9 +22,26 @@ namespace ciklusok_SHJ
             int osszeg = szamok.Sum();
             Console.WriteLine($"\nÖsszeg: {osszeg}");
 
-                Console.WriteLine("kilépéshez valamit");
+
+
+
+            double atlag = szamok.Average();
+            Console.WriteLine($"Átlag: {atlag:F2}");
+
+            int max = szamok.Max();
+            Console.WriteLine($"Legnagyobb: {max}");
+
+            int min = szamok.Min();
+            Console.WriteLine($"Legkisebb: {min}");
+            
+            Console.WriteLine("kilépéshez valamit");
                 Console.ReadLine();
+
+
+
+
+
             }
         }
     }
-}
+
