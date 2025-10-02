@@ -10,38 +10,64 @@ namespace ciklusok_SHJ
     {
         static void Main(string[] args)
         {
-            Random rand = new Random();
+            Random rnd = new Random();
             List<int> szamok = new List<int>();
 
             for (int i = 0; i < 50; i++)
             {
-                szamok.Add(rand.Next(1, 101));
+                szamok.Add(rnd.Next(1, 101));
             }
 
+            int össz = 0;
+            int max = szamok[0];
+            int min = szamok[0];
+            bool több5 = false;
+            int több90 = 0;
+            List<int> több90szam = new List<int>();
 
-            int osszeg = szamok.Sum();
-            Console.WriteLine($"\nÖsszeg: {osszeg}");
+            for (int i = 0; i < szamok.Count; i++)
+            {
+                int szam = szamok[i];
+                össz += szam;
 
+                if (szam > max)
+                    max = szam;
 
+                if (szam < min)
+                    min = szam;
 
+                if (szam < 5)
+                    több5 = true;
 
-            double atlag = szamok.Average();
-            Console.WriteLine($"Átlag: {atlag:F2}");
+                if (szam > 90)
+                {
+                    több90++;
+                    több90szam.Add(szam);
+                }
+            }
 
-            int max = szamok.Max();
-            Console.WriteLine($"Legnagyobb: {max}");
+            double average = (double)össz / szamok.Count;
 
-            int min = szamok.Min();
-            Console.WriteLine($"Legkisebb: {min}");
-            
-            Console.WriteLine("kilépéshez valamit");
+            Console.WriteLine("Összeg: " + össz);
+            Console.WriteLine("Átlag: " + average);
+            Console.WriteLine("Legnagyobb elem: " + max);
+            Console.WriteLine("Legkisebb elem: " + min);
+            Console.WriteLine("Van 5-nél kisebb érték? " + (több5 ? "Igen" : "Nincs"));
+            Console.WriteLine("90-nél nagyobb számok száma: " + több90);
+
+            if (több90 > 0)
+            {
+                Console.WriteLine("90-nél nagyobb számok:");
+                for (int i = 0; i < több90szam.Count; i++)
+                {
+                    Console.Write(több90szam[i] + " ");
+                }
+                Console.WriteLine();
+
+                Console.WriteLine("valamit kilépéshez");
                 Console.ReadLine();
-
-
-
-
-
             }
         }
     }
+}
 
